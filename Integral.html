@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDEN | Proyecto Integral - Pedro Alcoba</title>
+    <meta
+      name="description"
+      content="Visores SIG experimentales del proyecto Recursos forestales del territorio de Integral. Incluye MapViewer, Dashboard, Atlas y aplicaciones embebidas en ArcGIS Online."
+    />
+    <meta name="author" content="Pedro Alcoba Gómez" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Proyecto Integral - IDEN · Pedro Alcoba"
+    />
+    <meta
+      property="og:description"
+      content="Visores y aplicaciones experimentales del proyecto Integral con ArcGIS Online: MapViewer, Dashboard, Atlas y apps."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/previews/integral.jpg" />
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- ArcGIS embeddable components -->
+    <script
+      type="module"
+      src="https://js.arcgis.com/embeddable-components/4.33/arcgis-embeddable-components.esm.js"
+    ></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header role="banner">
+      <div class="header-container">
+        <img
+          src="https://entornonatural.org/wp-content/uploads/2019/03/entornonatural-simbolo-blanco.png"
+          alt="Logo IDEN"
+          class="logo"
+        />
+        <div class="header-text">
+          <h1>IDEN · Pruebas y prototipos</h1>
+          <p>Sección experimental de visores y aplicaciones SIG</p>
+        </div>
+
+        <!-- NAV DESPLEGABLE -->
+        <nav
+          class="dropdown"
+          role="navigation"
+          aria-label="Navegación principal"
+        >
+          <button class="dropbtn">Menú ▾</button>
+          <ul class="dropdown-content">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Integral.html">Integral</a></li>
+            <li><a href="Decaimiento-AB.html">Decaimiento</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h1>Proyecto Integral · Recursos forestales del territorio</h1>
+        <p>
+          Este visor experimental forma parte del proyecto
+          <em>Recursos forestales del territorio de Integral</em>, y reúne un
+          conjunto de <strong>capas temáticas</strong> orientadas a la gestión y
+          puesta en valor de los recursos naturales. La aplicación permite
+          explorar
+          <em
+            >infraestructuras forestales, patrimonio arbóreo y paisajes
+            singulares</em
+          >, así como otras coberturas vinculadas al uso público y al ámbito
+          territorial de referencia.
+        </p>
+        <p>
+          El visor está en continua evolución, y constituye un
+          <strong>entorno de pruebas</strong> para la integración de cartografía
+          forestal en plataformas web GIS. Se prevé la incorporación de nuevas
+          coberturas como los <em>senderos locales y de pequeño recorrido</em>,
+          que complementarán a los actualmente disponibles.
+        </p>
+      </section>
+
+      <section>
+        <h2>🗺️ Contenidos actuales</h2>
+        <p>La leyenda del visor incluye las siguientes capas:</p>
+        <ul>
+          <li>
+            <strong>Recursos</strong>
+            <ul>
+              <li><em>Patrimonio arbóreo</em></li>
+              <li><em>Paisaje forestal</em></li>
+              <li><em>Infraestructura forestal</em></li>
+            </ul>
+          </li>
+          <li><strong>Senderos GR – FEDME</strong></li>
+          <li><strong>Vías pecuarias</strong></li>
+          <li><strong>Ámbito territorial – Integral</strong></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>🌲 Capa de recursos</h2>
+        <p>
+          La capa de <strong>Recursos</strong> concentra información descriptiva
+          y espacial de elementos de interés forestal y cultural. Entre los
+          atributos disponibles se incluyen:
+        </p>
+        <ul>
+          <li><em>Nombre</em> y <em>descripción</em> del recurso</li>
+          <li><em>Municipio</em> y <em>paraje</em> de localización</li>
+          <li><em>Altura del arbolado</em> (ALTURA_ARB)</li>
+          <li>
+            <em>Bloque</em> temático al que pertenece (ej. Infraestructura
+            forestal)
+          </li>
+          <li><em>Estado de conservación</em> (ESTAD_CONS)</li>
+          <li><em>Propiedad</em> y <em>acceso</em></li>
+        </ul>
+        <p>
+          Un ejemplo de este inventario lo constituye la
+          <strong>Ermita de la Rogativa</strong>, situada en el municipio de
+          Caravaca de la Cruz, dentro del <em>Paraje de la Rogativa</em>,
+          clasificada dentro del bloque de infraestructura forestal.
+        </p>
+      </section>
+
+      <section class="resources">
+        <h2>🔗 Recursos en ArcGIS Online</h2>
+        <ul>
+          <li>
+            <a
+              href="https://arcg.is/1rn9rP0"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Visor MapViewer (página completa)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://iden.maps.arcgis.com/apps/dashboards/f59f7088bf53406f8928e37a36f45384"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Dashboard de indicadores</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://iden.maps.arcgis.com/apps/instant/atlas/index.html?appid=66c1a02800454e7b99fbfda3af3a3742"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Atlas interactivo</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://iden.maps.arcgis.com/apps/instant/sidebar/index.html?appid=a33fbde9a484407e8f0344eda2017ff7"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Aplicación con barra lateral</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>🌍 Visor MapViewer (embebido)</h2>
+        <p>
+          Ejemplo de integración del visor de <strong>ArcGIS Online</strong> con
+          herramientas básicas de navegación y leyenda.
+        </p>
+        <arcgis-embedded-map
+          style="height: 600px; width: 100%; max-width: 1000px"
+          item-id="3f7bc38661d74520946f9f5f4423bcbe"
+          theme="light"
+          heading-enabled
+          legend-enabled
+          share-enabled
+          center="-1.961704143175549,37.9642605308912"
+          scale="1155581.108577"
+          portal-url="https://iden.maps.arcgis.com"
+          aria-label="Mapa embebido de recursos forestales en ArcGIS Online"
+        >
+        </arcgis-embedded-map>
+      </section>
+
+      <section>
+        <h2>📊 Dashboard (embebido)</h2>
+        <p>
+          Visualización de indicadores clave del proyecto en formato dashboard
+          dinámico.
+        </p>
+        <iframe
+          src="https://iden.maps.arcgis.com/apps/dashboards/f59f7088bf53406f8928e37a36f45384"
+          style="
+            width: 100%;
+            height: 600px;
+            max-width: 1000px;
+            border: none;
+            border-radius: 10px;
+          "
+          title="Dashboard de recursos forestales en ArcGIS Online"
+          allowfullscreen
+          loading="lazy"
+        >
+        </iframe>
+      </section>
+
+      <section>
+        <h2>📖 Atlas (embebido)</h2>
+        <p>
+          Atlas digital con distintas capas temáticas sobre los recursos
+          forestales.
+        </p>
+        <iframe
+          src="https://iden.maps.arcgis.com/apps/instant/atlas/index.html?appid=66c1a02800454e7b99fbfda3af3a3742"
+          style="
+            width: 100%;
+            height: 600px;
+            max-width: 1000px;
+            border: none;
+            border-radius: 10px;
+          "
+          title="Atlas de recursos forestales en ArcGIS Online"
+          allowfullscreen
+          loading="lazy"
+        >
+        </iframe>
+      </section>
+
+      <section>
+        <h2>💻 App de barra lateral (embebida)</h2>
+        <p>
+          Aplicación configurada en <strong>ArcGIS Instant Apps</strong> con
+          menú lateral para explorar los datos.
+        </p>
+        <iframe
+          src="https://iden.maps.arcgis.com/apps/instant/sidebar/index.html?appid=a33fbde9a484407e8f0344eda2017ff7"
+          style="
+            width: 100%;
+            height: 600px;
+            max-width: 1000px;
+            border: none;
+            border-radius: 10px;
+          "
+          title="App de barra lateral de recursos forestales en ArcGIS Online"
+          allowfullscreen
+          loading="lazy"
+        >
+        </iframe>
+      </section>
+
+      <section class="note">
+        <h2>📌 Nota</h2>
+        <p>
+          Este visor se encuentra en <em>fase experimental</em>. Puede sufrir
+          cambios en sus contenidos, estructura de capas o disponibilidad, ya
+          que se emplea como laboratorio de integración de datos forestales y
+          territoriales en entornos web GIS.
+        </p>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer role="contentinfo">
+      <div class="footer-container">
+        <img
+          src="assets/img/logos/logo.png"
+          alt="Logo Pedralcg"
+          class="footer-logo"
+        />
+        <p>
+          © 2025
+          <a
+            href="https://pedralcg.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Pedro Alcoba
+          </a>
+          · IDEN
+        </p>
+      </div>
+    </footer>
+    <!-- JS -->
+    <script src="assets/js/header.js"></script>
+  </body>
+</html>
