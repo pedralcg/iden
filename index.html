@@ -1,53 +1,150 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>IDEN | Pruebas y Borradores</title>
-  <meta name="description" content="Zona de pruebas IDEN de Pedro Alcoba Gómez: visores embebidos, borradores y experimentos de Web GIS.">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/assets/css/style.css" />
-</head>
-<body>
-  <div id="header"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDEN | Inicio - Pedro Alcoba</title>
+    <meta
+      name="description"
+      content="Espacio de pruebas y prototipos de Pedro Alcoba Gómez para visores web GIS, análisis de teledetección, Google Earth Engine, ArcGIS Online y aplicaciones aplicadas a la gestión forestal y ambiental."
+    />
+    <meta name="author" content="Pedro Alcoba Gómez" />
 
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <img src="https://entornonatural.org/wp-content/uploads/2019/03/entornonatural-simbolo-blanco.png" 
-             alt="Logo IDEN" class="hero-logo" />
-        <div>
-          <h1>Zona de Pruebas IDEN</h1>
-          <p>
-            Espacio dedicado a <strong>borradores, prototipos y visores experimentales</strong> 
-            desarrollados en el marco del trabajo con <em>Infraestructuras de Datos Espaciales</em>.
-          </p>
-          <p>
-            Aquí encontrarás pruebas rápidas de integración con <strong>ArcGIS Online</strong>, 
-            <strong>Leaflet</strong>, <strong>OpenLayers</strong> y otras tecnologías Web GIS.
-          </p>
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="IDEN · Pruebas y prototipos - Pedro Alcoba"
+    />
+    <meta
+      property="og:description"
+      content="Visores web GIS experimentales en gestión forestal, teledetección y análisis espacial con Google Earth Engine, ArcGIS Online y tecnologías SIG."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/previews/index.jpg" />
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header role="banner">
+      <div class="header-container">
+        <img
+          src="https://entornonatural.org/wp-content/uploads/2019/03/entornonatural-simbolo-blanco.png"
+          alt="Logo IDEN"
+          class="logo"
+        />
+        <div class="header-text">
+          <h1>IDEN · Pruebas y prototipos</h1>
+          <p>Visores y aplicaciones SIG para la gestión del territorio</p>
         </div>
+
+        <!-- NAV DESPLEGABLE -->
+        <nav
+          class="dropdown"
+          role="navigation"
+          aria-label="Navegación principal"
+        >
+          <button class="dropbtn">Menú ▾</button>
+          <ul class="dropdown-content">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Integral.html">Integral</a></li>
+            <li><a href="Decaimiento-AB.html">Decaimiento</a></li>
+          </ul>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <section>
-      <h2>Enlaces rápidos</h2>
-      <ul>
-        <li><a href="integral.html">Visor en ArcGIS Online (embed)</a></li>
-      </ul>
-    </section>
+    <!-- MAIN -->
+    <main role="main">
+      <section class="intro">
+        <h1>Sección experimental IDEN</h1>
+        <p>
+          Este espacio recopila
+          <strong>visores web, prototipos y aplicaciones en desarrollo</strong>,
+          concebidos como entorno de ensayo para la
+          <em>gestión ambiental y forestal</em>. Los proyectos exploran el
+          potencial de <strong>Google Earth Engine</strong>,
+          <strong>ArcGIS Online</strong> y tecnologías SIG aplicadas al análisis
+          espacial, la monitorización de ecosistemas y el apoyo a la toma de
+          decisiones en la gestión del territorio.
+        </p>
+        <p>
+          Se incluyen experiencias con
+          <em>teledetección satelital, LiDAR, fotogrametría y geoestadística</em
+          >, integradas en entornos web interactivos.
+        </p>
+      </section>
 
-    <section>
-      <h2>Notas</h2>
-      <p>
-        Esta sección es un área de trabajo en desarrollo. 
-        Los visores aquí mostrados pueden ser borradores o pruebas 
-        sin funcionalidad final.
-      </p>
-    </section>
-  </main>
+      <section class="projects">
+        <!-- Card Integral -->
+        <a href="Integral.html" class="card-link">
+          <div class="card">
+            <img
+              src="assets/img/previews/integral.png"
+              alt="Preview del visor Integral"
+              class="card-thumb"
+            />
+            <div class="card-info">
+              <h2>Proyecto Integral</h2>
+              <p>
+                Conjunto de visores y aplicaciones desarrolladas para el
+                proyecto
+                <em>Recursos forestales del territorio de Integral</em>, que
+                incluyen dashboards, atlas interactivos y visores en
+                <strong>ArcGIS Online</strong>. Una plataforma para explorar la
+                distribución, estado y gestión de los recursos naturales.
+              </p>
+            </div>
+          </div>
+        </a>
 
-  <div id="footer"></div>
-  <script src="/assets/js/include.js"></script>
-</body>
+        <!-- Card Decaimiento -->
+        <a href="Decaimiento-AB.html" class="card-link">
+          <div class="card">
+            <img
+              src="assets/img/previews/decaimiento-ab.png"
+              alt="Preview del visor de decaimiento forestal"
+              class="card-thumb"
+            />
+            <div class="card-info">
+              <h2>Decaimiento forestal en Albacete</h2>
+              <p>
+                Aplicaciones basadas en
+                <strong>Google Earth Engine</strong> para el análisis del
+                <em>decaimiento forestal</em> en montes de utilidad pública de
+                la provincia de Albacete. Incluye el uso de series temporales
+                satelitales y métricas de vegetación para el seguimiento de la
+                salud forestal.
+              </p>
+            </div>
+          </div>
+        </a>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer role="contentinfo">
+      <div class="footer-container">
+        <img
+          src="assets/img/logos/logo.png"
+          alt="Logo Pedralcg"
+          class="footer-logo"
+        />
+        <p>
+          © 2025
+          <a
+            href="https://pedralcg.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Pedro Alcoba
+          </a>
+          · IDEN
+        </p>
+      </div>
+    </footer>
+    <!-- JS -->
+    <script src="assets/js/header.js"></script>
+  </body>
 </html>
