@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDEN | Decaimiento forestal en Albacete - Pedro Alcoba</title>
+    <meta
+      name="description"
+      content="Visores experimentales en Google Earth Engine sobre el decaimiento forestal en los montes de utilidad pública de la provincia de Albacete."
+    />
+    <meta name="author" content="Pedro Alcoba Gómez" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Decaimiento forestal en Albacete - IDEN · Pedro Alcoba"
+    />
+    <meta
+      property="og:description"
+      content="Visores experimentales en Google Earth Engine para analizar el decaimiento forestal en los montes de utilidad pública de Albacete."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/previews/decaimiento.jpg" />
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header role="banner">
+      <div class="header-container">
+        <img
+          src="https://entornonatural.org/wp-content/uploads/2019/03/entornonatural-simbolo-blanco.png"
+          alt="Logo IDEN"
+          class="logo"
+        />
+        <div class="header-text">
+          <h1>IDEN · Pruebas y prototipos</h1>
+          <p>Sección experimental de visores y aplicaciones SIG</p>
+        </div>
+
+        <!-- NAV DESPLEGABLE -->
+        <nav
+          class="dropdown"
+          role="navigation"
+          aria-label="Navegación principal"
+        >
+          <button class="dropbtn">Menú ▾</button>
+          <ul class="dropdown-content">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Integral.html">Integral</a></li>
+            <li><a href="Decaimiento-AB.html">Decaimiento</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <section class="intro">
+        <h1>Decaimiento forestal en Albacete</h1>
+        <p>
+          Esta página reúne
+          <strong>visores y aplicaciones experimentales</strong> creados con
+          <strong>Google Earth Engine (GEE)</strong> para analizar el
+          <em
+            >decaimiento de masas forestales en los Montes de Utilidad Pública
+            (MUP)</em
+          >
+          de la provincia de Albacete. Los recursos aplican
+          <strong>índices espectrales derivados de imágenes Sentinel-2</strong>,
+          lo que permite explorar fenómenos como pérdida de vigor vegetal,
+          estrés hídrico o tendencias de recuperación.
+        </p>
+      </section>
+
+      <!-- Sección 1 -->
+      <section aria-labelledby="visor-indice" class="resources">
+        <h2 id="visor-indice">🌍 Plataforma PADeFA (Índice espectral)</h2>
+        <p>
+          La
+          <strong
+            >Plataforma de Análisis del Decaimiento Forestal en Albacete
+            (PADeFA)</strong
+          >
+          permite seleccionar fecha, rango de días y nivel máximo de nubosidad
+          para generar una <em>imagen compuesta</em>. Sobre esta base se
+          calculan índices como <strong>NDVI</strong>, <strong>NBR</strong>,
+          <strong>CIre</strong> y <strong>MSI</strong>, que muestran vigor,
+          daños por incendios, contenido de clorofila y estrés hídrico.
+        </p>
+
+        <div class="links">
+          <strong>Enlace:</strong>
+          <ul>
+            <li>
+              <a
+                href="https://pedralcg.users.earthengine.app/view/padefa"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Abrir visor en página completa</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <iframe
+          src="https://pedralcg.users.earthengine.app/view/padefa"
+          title="Plataforma PADeFA en Google Earth Engine"
+          loading="lazy"
+          style="
+            width: 100%;
+            max-width: 1200px;
+            height: 80vh;
+            max-height: 1200px;
+            border: 0;
+            border-radius: 10px;
+            display: block;
+            margin: 1rem auto;
+          "
+        >
+        </iframe>
+      </section>
+
+      <!-- Sección 2 -->
+      <section aria-labelledby="visor-serie" class="resources">
+        <h2 id="visor-serie">📈 Serie temporal en MUP</h2>
+        <p>
+          Este visor genera <strong>series temporales mensuales</strong> para
+          los Montes de Utilidad Pública seleccionados. El usuario puede elegir
+          un monte, un índice espectral y un intervalo de meses. El resultado es
+          una gráfica con el promedio mensual, lo que facilita detectar
+          <em
+            >tendencias de vigor, estrés hídrico o impacto de perturbaciones</em
+          >.
+        </p>
+
+        <div class="links">
+          <strong>Enlace:</strong>
+          <ul>
+            <li>
+              <a
+                href="https://pedralcg.users.earthengine.app/view/padefa-graf-mup"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Abrir serie temporal en página completa</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <iframe
+          src="https://pedralcg.users.earthengine.app/view/padefa-graf-mup"
+          title="Serie temporal de índices espectrales en MUP de Albacete"
+          loading="lazy"
+          style="
+            width: 100%;
+            max-width: 1200px;
+            height: 80vh;
+            max-height: 1200px;
+            border: 0;
+            border-radius: 10px;
+            display: block;
+            margin: 1rem auto;
+          "
+        >
+        </iframe>
+      </section>
+
+      <!-- Sección 3 -->
+      <section aria-labelledby="visor-pendientes" class="resources">
+        <h2 id="visor-pendientes">📊 Análisis de pendientes</h2>
+        <p>
+          Este visor calcula la
+          <strong>pendiente de la serie temporal</strong> de índices en cada
+          monte, mostrando si la tendencia es de <em>decaimiento</em>,
+          <em>estabilidad</em> o <em>mejora</em>. La leyenda distingue:
+        </p>
+        <ul>
+          <li>≤ -0.05 → tendencia de <strong>decaimiento</strong> por año</li>
+          <li>≈ 0 → <strong>sin cambios significativos</strong></li>
+          <li>≥ 0.05 → tendencia de <strong>mejora</strong> por año</li>
+        </ul>
+
+        <div class="links">
+          <strong>Enlace:</strong>
+          <ul>
+            <li>
+              <a
+                href="https://pedralcg.users.earthengine.app/view/analisis-pendientes-mup"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Abrir análisis de pendientes en página completa</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <iframe
+          src="https://pedralcg.users.earthengine.app/view/analisis-pendientes-mup"
+          title="Análisis de pendientes de índices espectrales en MUP de Albacete"
+          loading="lazy"
+          style="
+            width: 100%;
+            max-width: 1200px;
+            height: 80vh;
+            max-height: 1200px;
+            border: 0;
+            border-radius: 10px;
+            display: block;
+            margin: 1rem auto;
+          "
+        >
+        </iframe>
+      </section>
+
+      <section class="note">
+        <h2>📌 Nota</h2>
+        <p>
+          Los visores incluidos son
+          <em>prototipos experimentales</em> desarrollados en Google Earth
+          Engine. Pueden no estar disponibles temporalmente y su rendimiento
+          depende de la calidad y disponibilidad de imágenes Sentinel-2.
+        </p>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer role="contentinfo">
+      <div class="footer-container">
+        <img
+          src="assets/img/logos/logo.png"
+          alt="Logo Pedralcg"
+          class="footer-logo"
+        />
+        <p>
+          © 2025
+          <a
+            href="https://pedralcg.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Pedro Alcoba
+          </a>
+          · IDEN
+        </p>
+      </div>
+    </footer>
+    <!-- JS -->
+    <script src="assets/js/header.js"></script>
+  </body>
+</html>
